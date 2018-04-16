@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#7cdc94"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Đăng nhập hệ thống"
+        android:textColor="#ff11"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="20dp"
+       android:hint="UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_below="@id/edtUser"
+        android:layout_marginTop="20dp"
+        android:hint="PassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:text="Đăng Nhập"
+        android:layout_below="@id/edtPass"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnHuy"
+        android:text="Hủy"
+        android:layout_below="@id/edtPass"
+        android:layout_toRightOf="@id/btnDangNhap"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
